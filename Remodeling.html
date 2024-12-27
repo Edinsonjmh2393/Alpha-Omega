@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remodeling Services - Alpha & Omega</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background: #f39c12;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #34495e;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        .hero {
+            background: url('img/remodeling-bg.jpg') no-repeat center center/cover;
+            color: #000;
+            text-align: center;
+            padding: 150px 20px;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        section {
+            padding: 40px 20px;
+            background: #fff;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2rem;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .service-card {
+            background: #ecf0f1;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 20px);
+            max-width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card i {
+            font-size: 3rem;
+            color: #f39c12;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            color: #333;
+            font-weight: bold;
+        }
+        .testimonials {
+            background: #ecf0f1;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .testimonial {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            text-align: center;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            color: #555;
+        }
+
+        .testimonial h4 {
+            margin-top: 10px;
+            color: #2c3e50;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: calc(33.333% - 10px);
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            color: #fff;
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Remodeling Services</h1>
+        <p>Transforming Spaces with Quality and Excellence</p>
+        <a href="#contact" class="btn-primary">Get a Free Quote</a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h2>Top-Quality Remodeling Services</h2>
+        <p>Bringing new life to homes and commercial spaces with exceptional craftsmanship</p>
+    </div>
+
+    <section id="about">
+        <h2>About Our Remodeling Services</h2>
+        <p>At <strong>Alpha & Omega Multiservices LLC</strong>, We specialize in delivering top-tier remodeling solutions that are expertly tailored to meet your unique needs and preferences. Whether you're envisioning a sleek, modern upgrade to your kitchen, a luxurious bathroom renovation, or a complete transformation of your home, our skilled team is here to bring your ideas to life with precision and care.
+
+            From the initial consultation to the final walk-through, we prioritize open communication, attention to detail, and the highest standards of craftsmanship to ensure that every project is completed to perfection. Our commitment goes beyond just improving the look of your space; we focus on enhancing functionality, adding value to your property, and creating an environment that truly feels like home. With a proven track record of delivering outstanding results, we take pride in turning your remodeling dreams into reality while ensuring your complete satisfaction every step of the way.
+            
+            
+            
+            
+            
+            
+            </p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <i class="fas fa-home"></i>
+                <h3>Residential Remodeling</h3>
+                <p>Custom remodeling for kitchens, bathrooms, and living spaces to suit your needs.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-building"></i>
+                <h3>Commercial Renovations</h3>
+                <p>High-quality updates for offices, retail spaces, and industrial facilities.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tools"></i>
+                <h3>General Contracting</h3>
+                <p>Comprehensive management of all aspects of remodeling projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Client Testimonials</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"Our kitchen looks amazing thanks to Alpha & Omega. They exceeded all our expectations!"</p>
+                <h4>- Lisa R., Naples, FL</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Professional and efficient. They revamped our office space perfectly."</p>
+                <h4>- Mark T., Fort Myers, FL</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Our Recent Projects</h2>
+        <div class="gallery">
+            <img src="img/remodeling1.jpg" alt="Kitchen Remodel">
+            <img src="img/remodeling2.jpg" alt="Office Renovation">
+            <img src="img/remodeling3.jpg" alt="Bathroom Upgrade">
+            <img src="img/remodeling4.JPG" alt="Bathroom Upgrade">
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2024 Alpha & Omega Multiservices LLC. All Rights Reserved.</p>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:Edinsonjcedesignee@gmail.com" style="color: #f39c12;">Edinsonjcedesignee@gmail.com</a></p>
+            <p>Phone: <a href="tel:2392035965" style="color: #f39c12;">239-203-5965</a></p>
+        </div>
+    </footer>
+</body>
+</html>

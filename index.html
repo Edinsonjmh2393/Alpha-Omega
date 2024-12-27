@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="General Construction, Remodeling, Demolition, and Cleaning Services in Cape Coral, Florida. Top-notch services with guaranteed results.">
+    <meta name="keywords" content="Construction, Remodeling, Demolition, Cleaning Services, Florida, Cape Coral">
+    <title>Alpha & Omega Multiservices LLC & JCE Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background: #f8f9fa;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header .contact-info {
+            font-size: 1.2rem;
+        }
+
+        header .contact-info a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: url('img/construction-bg.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+
+        #hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #f39c12;
+        }
+
+        #hero p {
+            font-size: 1.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #f39c12;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #e67e22;
+        }
+
+        /* About Section */
+        #about-us {
+            padding: 40px 20px;
+            background: #fff;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            text-align: center;
+        }
+
+        #about-us h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        #about-us p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Gallery Section */
+        #our-work {
+            padding: 40px 20px;
+            background: #fff;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .gallery .project {
+            position: relative;
+            width: 300px;
+            cursor: pointer;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery .project:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .gallery .overlay {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            font-weight: bold;
+        }
+
+        /* Videos Section */
+        #videos {
+            padding: 40px 20px;
+            background: #fff;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            text-align: center;
+        }
+
+        .video-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        video {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 40px 20px;
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+        }
+
+        #contact h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        #contact form input, #contact form textarea {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        #contact form button {
+            background: #f39c12;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        #contact form button:hover {
+            background: #e67e22;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer .social-media a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+
+        footer .social-media a:hover {
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Alpha & Omega Multiservices LLC & JCE Services</h1>
+        <div class="contact-info">Call us: <a href="tel:+12392035965">(239) 203-5965</a></div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#our-work">Our Work</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Your All-in-One Solution for Construction and Cleaning</h1>
+        <p>Top-quality construction, remodeling, and cleaning services in Cape Coral, Florida.</p>
+        <a href="#contact" class="btn">Get a Free Quote</a>
+    </section>
+
+    <section id="about-us">
+        <h2>About Us</h2>
+        <p>Welcome to Alpha & Omega Multiservices LLC, where we transform ideas into reality. With over 30 years of combined expertise, our team excels in construction, remodeling, and cleaning services. We take pride in delivering exceptional results, ensuring every project reflects quality, innovation, and customer satisfaction. Whether it's residential or commercial, our dedicated professionals work tirelessly to meet your expectations and exceed them. At Alpha & Omega, we don’t just build; we create lasting impressions.</p>
+        <p>Trust us to bring excellence to your projects. Let’s build a better tomorrow together!</p>
+    </section>
+
+    <section id="our-work">
+        <h2>Our Work</h2>
+        <div class="gallery">
+            <div class="project" onclick="location.href='construction.html';">
+                <img src="img/construction.jpg" alt="Construction">
+                <div class="overlay">Construction</div>
+            </div>
+            <div class="project" onclick="location.href='remodeling.html';">
+                <img src="img/remodeling.jpg" alt="Remodeling">
+                <div class="overlay">Remodeling</div>
+            </div>
+            <div class="project" onclick="location.href='cleaning.html';">
+                <img src="img/cleaning.jpg" alt="Cleaning">
+                <div class="overlay">Cleaning</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="videos">
+        <h2>Our Videos</h2>
+        <div class="video-section">
+            <video controls>
+                <source src="video/videos/video1.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="video/videos/video2.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="video/videos/video3.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="video/videos/Video4.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="video/videos/video5.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="video/videos/video6.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Fill out the form below, and our team will get back to you promptly.</p>
+        <form action="#" method="POST">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Alpha & Omega Multiservices LLC & JCE Services. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
